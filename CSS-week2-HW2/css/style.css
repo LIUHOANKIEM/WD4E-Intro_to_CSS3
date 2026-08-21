@@ -1,4 +1,4 @@
-
+/* ===== Body ===== */
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -9,37 +9,48 @@ body {
   line-height: 1.5;
 }
 
+/* ===== Skip link ===== */
+body > a {
+  display: block;
+  background-color: #1a3c1a;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+}
 
+/* ===== Header ===== */
 header {
-  background-color: #2c5f2d; 
+  background-color: #1a3c1a;
   padding: 20px;
   text-align: center;
 }
 
-
+/* ===== Navigation (Bước 4) ===== */
 nav {
-  background-color: #97c93d; 
+  background-color: #2e7d32;
   padding: 10px 0;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  text-align: center;
 }
 
-
+/* ===== List items (Bước 3) ===== */
 li {
   display: inline-block;
-  width: 180px;
+  width: 160px;
   text-align: center;
 }
 
 li a {
-  color: #1a1a1a;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 12px;
@@ -47,33 +58,39 @@ li a {
 }
 
 li a:hover {
-  background-color: #2c5f2d;
-  color: white;
+  background-color: #1a3c1a;
   border-radius: 4px;
 }
 
+/* ===== Ảnh trong header (Bước 5) ===== */
+header img {
+  width: 10%;
+}
+
+/* ===== Main ===== */
 main {
   background-color: #ffffff;
   font-size: 18px;
   padding: 30px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 20px auto;
   border-radius: 8px;
 }
 
-
+/* ===== Footer ===== */
 footer {
-  background-color: #2c5f2d;
-  color: white;
+  background-color: #1a3c1a;
+  color: #ffffff;
   text-align: center;
   padding: 15px;
   margin-top: 30px;
 }
 
 footer a {
-  color: #97c93d;
+  color: #a5d6a7;
 }
 
+/* ===== Heading h1 ===== */
 h1 {
   text-align: center;
   font-family: Georgia, "Times New Roman", serif;
@@ -82,18 +99,33 @@ h1 {
   font-size: 2.2em;
 }
 
-
+/* ===== Paragraph ===== */
 p {
   line-height: 1.7;
 }
 
-
-main img {
-  margin: 8px;
-  border-radius: 6px;
-  border: 2px solid #ddd;
+/* ===== Grid class (Bước 6 + 7 + 8) ===== */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 20px;
 }
 
-main div {
-  text-align: center;
+.grid img {
+  width: 100%;
+}
+
+/* ===== Flex class (Bước 9) ===== */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.flex img {
+  width: 150px;
 }
